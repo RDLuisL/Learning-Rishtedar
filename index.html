@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz de Significado de Platos Indios</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="logo" src="rishtedar-logo.png" alt="">
+  <h1>📚 Quiz de Platos Indios - Significado</h1>
+  
+  <div id="question">¿Qué significa este plato?</div>
+  
+  <button id="show-answer">Mostrar Respuesta</button>
+  <button id="correct-answer">¡La sabía! (Correcto)</button>
+  <button id="next-question">Siguiente</button>
+  
+  <div id="answer">Respuesta</div>
+
+  <div id="stats">Correctas: 0 | Total: 0 | Puntaje: 0%</div>
+  
+  <button id="restart" style="display:none;">Reiniciar Quiz</button>
+    <footer>
+        <h4>
+            Por: Luis Luna
+        </h4>
+    </footer>
+  <!-- Sonidos -->
+  <audio id="correct-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-correct-answer-tone-2870.mp3"></audio>
+  <audio id="finish-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-game-level-completed-2059.mp3"></audio>
+  <script type="module" src="./app.js"></script>
+
+</body>
+</html>
