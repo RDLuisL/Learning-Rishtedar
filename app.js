@@ -6,6 +6,7 @@ let total = 0;
 let currentQuestion = null;
 
 const questionDiv = document.getElementById("question");
+const imageContainer = document.getElementById("image-container");
 const answerDiv = document.getElementById("answer");
 const showAnswerBtn = document.getElementById("show-answer");
 const correctAnswerBtn = document.getElementById("correct-answer");
@@ -21,60 +22,61 @@ function shuffle(array) {
 
 function pickQuestion() {
   if (availableQuestions.length === 0) {
-    questionDiv.innerText = "🎉 ¡Quiz terminado!";
-    answerDiv.style.display = "none";
-    showAnswerBtn.style.display = "none";
-    correctAnswerBtn.style.display = "none";
-    nextQuestionBtn.style.display = "none";
-    restartBtn.style.display = "inline-block";
+    questionDiv.innerText = "🎉 ¡Terminaste el quiz!";
+    imageContainer.innerHTML = "";
     finishSound.play();
+    restartBtn.style.display = "inline";
     return;
   }
-  answerDiv.style.display = "none";
+
   currentQuestion = availableQuestions.pop();
-  questionDiv.innerText = `¿Qué significa: ${currentQuestion.pregunta}?`;
+  questionDiv.innerText = currentQuestion.pregunta;
+  answerDiv.innerText = "Respuesta";
+
+  if (currentQuestion.imagen && currentQuestion.imagen !== "imagen no disponible") {
+    imageContainer.innerHTML = `<img src="${currentQuestion.imagen}" alt="Imagen del plato" style="max-width: 300px; margin: 10px 0;">`;
+  } else {
+    imageContainer.innerHTML = `<p style="color: gray;">Imagen no disponible</p>`;
+  }
 }
 
 function showAnswer() {
-  answerDiv.innerText = currentQuestion.respuesta;
-  answerDiv.style.display = "block";
+  if (currentQuestion) {
+    answerDiv.innerText = currentQuestion.respuesta;
+  }
 }
 
-function correctAnswer() {
+function markCorrect() {
   correct++;
   total++;
-  correctSound.play();
   updateStats();
+  correctSound.play();
   pickQuestion();
 }
 
-function nextWithoutCorrect() {
+function nextQuestion() {
   total++;
   updateStats();
   pickQuestion();
 }
 
 function updateStats() {
-  const percentage = total === 0 ? 0 : Math.round((correct / total) * 100);
-  statsDiv.innerText = `Correctas: ${correct} | Total: ${total} | Puntaje: ${percentage}%`;
+  const percent = total > 0 ? ((correct / total) * 100).toFixed(0) : 0;
+  statsDiv.innerText = `Correctas: ${correct} | Total: ${total} | Puntaje: ${percent}%`;
 }
 
 function restartQuiz() {
-  availableQuestions = shuffle([...preguntas]);
   correct = 0;
   total = 0;
-  updateStats();
+  availableQuestions = shuffle([...preguntas]);
   restartBtn.style.display = "none";
-  showAnswerBtn.style.display = "inline-block";
-  correctAnswerBtn.style.display = "inline-block";
-  nextQuestionBtn.style.display = "inline-block";
+  updateStats();
   pickQuestion();
 }
 
 showAnswerBtn.addEventListener("click", showAnswer);
-correctAnswerBtn.addEventListener("click", correctAnswer);
-nextQuestionBtn.addEventListener("click", nextWithoutCorrect);
+correctAnswerBtn.addEventListener("click", markCorrect);
+nextQuestionBtn.addEventListener("click", nextQuestion);
 restartBtn.addEventListener("click", restartQuiz);
 
-availableQuestions = shuffle([...preguntas]);
-pickQuestion();
+restartQuiz();
