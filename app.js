@@ -32,6 +32,8 @@ function pickQuestion() {
   currentQuestion = availableQuestions.pop();
   questionDiv.innerText = currentQuestion.pregunta;
   answerDiv.innerText = "Respuesta";
+  answerDiv.style.display = "none";
+  
 
   if (currentQuestion.imagen && currentQuestion.imagen !== "imagen no disponible") {
     imageContainer.innerHTML = `<img src="${currentQuestion.imagen}" alt="Imagen del plato" style="max-width: 300px; margin: 10px 0;">`;
@@ -43,8 +45,10 @@ function pickQuestion() {
 function showAnswer() {
   if (currentQuestion) {
     answerDiv.innerText = currentQuestion.respuesta;
+    answerDiv.style.display = "block";
   }
 }
+
 
 function markCorrect() {
   correct++;
