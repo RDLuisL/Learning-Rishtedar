@@ -330,7 +330,7 @@ export const preguntas = [
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/tilldania.jpg"
 },
 {
-  pregunta: ❤️ Kashmiri Pulao 🍚",
+  pregunta: "❤️ Kashmiri Pulao 🍚",
   respuesta: "Arroz con frutas",
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/Kashimiri.jpg"
 },

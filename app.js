@@ -14,6 +14,7 @@ const nextQuestionBtn = document.getElementById("next-question");
 const statsDiv = document.getElementById("stats");
 const restartBtn = document.getElementById("restart");
 const correctSound = document.getElementById("correct-sound");
+const wrongSound = document.getElementById("wrong-sound");
 const finishSound = document.getElementById("finish-sound");
 
 function shuffle(array) {
@@ -61,8 +62,10 @@ function markCorrect() {
 function nextQuestion() {
   total++;
   updateStats();
+  wrongSound.play(); // ▶️ Reproduce sonido de error
   pickQuestion();
 }
+
 
 function updateStats() {
   const percent = total > 0 ? ((correct / total) * 100).toFixed(0) : 0;
