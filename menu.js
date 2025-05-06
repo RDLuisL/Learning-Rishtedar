@@ -1,6 +1,6 @@
 export const preguntas = [
   {
-    pregunta: "Samosas 🥔",
+    pregunta: "❤️ Samosas 🥔",
     respuesta: "Empanadillas de papa y especias",
     imagen: "https://cdn.mer-cat.com/rishtedar/400x400/img/products/samosas_1740159726Zl4FF8.jpg"
   },
@@ -15,12 +15,12 @@ export const preguntas = [
     imagen: "https://cdn.mer-cat.com/rishtedar/400x400/img/products/aloo_korma_1740159728gTQsTU.jpg?pass=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNDAweDQwMC9pbWcvcHJvZHVjdHMvYWxvb19rb3JtYV8xNzQwMTU5NzI4Z1RRc1RVLmpwZyJ9.lUQosHNPQ2EpgK8Yc0KPF74Nzh-gZhCHpCgjEpMnB8o"
   },
   {
-    pregunta: "Arroz Basmati 🍚",
+    pregunta: "❤️ Arroz Basmati 🍚",
     respuesta: "Arroz aromático de grano largo",
     imagen: "https://cdn.mer-cat.com/rishtedar/400x400/img/products/arroz_basmati_1740159730lDLkcD.jpg?pass=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNDAweDQwMC9pbWcvcHJvZHVjdHMvYXJyb3pfYmFzbWF0aV8xNzQwMTU5NzMwbERMa2NELmpwZyJ9.vqjj-IoJ3bFyjCyAbbXAntpRp7ZX1kK2-y35gh8N17o"
   },
   {
-    pregunta: "Butter Chicken 🍗🧈",
+    pregunta: "❤️ Butter Chicken 🍗🧈",
     respuesta: "Pollo a la mantequilla",
     imagen: "https://cdn.mer-cat.com/rishtedar/400x400/img/products/butter_chicken_1740159726XL0NWj.jpg?pass=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNDAweDQwMC9pbWcvcHJvZHVjdHMvYnV0dGVyX2NoaWNrZW5fMTc0MDE1OTcyNlhMME5Xai5qcGcifQ.lAxUCGR-jLFWYWh3BCkZ4BDisCljHGPBTzN9hnlQGjA"
   },
@@ -40,7 +40,7 @@ export const preguntas = [
     imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/8.jpg"
   },
   {
-    pregunta: "Jheenga Koliwada 🦐",
+    pregunta: "❤️ Jheenga Koliwada 🦐",
     respuesta: "Camarones fritos estilo Mumbai",
     imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/11-1.jpg"
   },
@@ -85,12 +85,12 @@ export const preguntas = [
     imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/murgh-tikka.jpg"
   },
   {
-    pregunta: "Murgh Curry 🍗",
+    pregunta: "❤️ Murgh Curry 🍗",
     respuesta: "Pollo al curry tradicional",
     imagen: "https://cdn.mer-cat.com/rishtedar/400x400/img/products/murgh_curry_1740159729b5zFyD.jpg?pass=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNDAweDQwMC9pbWcvcHJvZHVjdHMvbXVyZ2hfY3VycnlfMTc0MDE1OTcyOWI1ekZ5RC5qcGcifQ.oSC6REdGUKOikkWJJsFWidFlYhhNPB5nbE75-d82eGA"
   },
   {
-    pregunta: "Pacora Mix",
+    pregunta: "❤️ Pacora Mix",
     respuesta: "Frituras de queso y verduras",
     imagen: "https://cdn.mer-cat.com/rishtedar/400x400/img/products/pacora_mix_1741907534CzLQaS.jpg?pass=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNDAweDQwMC9pbWcvcHJvZHVjdHMvcGFjb3JhX21peF8xNzQxOTA3NTM0Q3pMUWFTLmpwZyJ9.-fsJRVgkBbuV9TLHtKbGzCMI9h-xXheoCmmk-6GFjxU"
   },
@@ -150,7 +150,7 @@ export const preguntas = [
     imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/7.jpg"
   },
   {
-    pregunta: "Johar E Motia 🍄",
+    pregunta: "❤️ Johar E Motia 🍄",
     respuesta: "Champiñones frescos en una salsa blanca suave con castañas de cajú deliciosas y un toque sutil de cardamomo.",
     imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/12-1-768x768.jpg"
   },
@@ -200,7 +200,7 @@ export const preguntas = [
   imagen: "https://pipingpotcurry.com/wp-content/uploads/2023/03/Chicken-Kali-Mirch-Recipe-Piping-Pot-Curry.jpg"
 },
 {
-  pregunta: "Murgh Nilgiri 🍗🥥",
+  pregunta: "❤️ Murgh Nilgiri 🍗🥥",
   respuesta: "Pollo estilo sur de la india (montañas Nilgiri) coco, menta y cilantro cremoso",
   imagen: "https://bollywood-muenchen.com/wp-content/uploads/2023/10/18.jpg"
 },
@@ -215,12 +215,12 @@ export const preguntas = [
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/murgh_mithaS.jpg"
 },
 {
-  pregunta: "Karay Murgh Tikka Masala 🍗🥥",
+  pregunta: "❤️ Karay Murgh Tikka Masala 🍗🥥",
   respuesta: "Especiado pollo en salsa tikka con masala y pimentón.",
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/murgh_mithaS.jpg"
 },
 {
-  pregunta: "Lasuni Saag Murgh 🍗🧄",
+  pregunta: "❤️ Lasuni Saag Murgh 🍗🧄",
   respuesta: "Pollo en salsa de espinacas con ajo cocinada al estilo indio con mucho masala",
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/saagMurgh2.jpg"
 },
@@ -270,7 +270,7 @@ export const preguntas = [
   imagen: "https://www.google.com/url?sa=i&url=https%3A%2F%2Famara.qa%2Fmenu%2Fseafood-curry%2Fjhinga-tawa-masala&psig=AOvVaw1YTb477WfgcOZSS-v0zXDf&ust=1746536783980000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMj81tmyjI0DFQAAAAAdAAAAABAE"
 },
 {
-  pregunta: "Balti Gosh 🐑🍖🍅🧅",
+  pregunta: "❤️ Balti Gosh 🐑🍖🍅🧅",
   respuesta: "Cordero salsa cebolla con tomate y especias",
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/Balty_Ghost2.jpg"
 },
@@ -305,17 +305,17 @@ export const preguntas = [
   imagen: "https://rishtedar.cl/wp-content/uploads/2024/10/murghts.png"
 },
 {
-  pregunta: "Cheese Naan 🍞🧀",
+  pregunta: "❤️ Cheese Naan 🍞🧀",
   respuesta: "Pan con queso",
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/Chesse_naan.jpg"
 },
 {
-  pregunta: "Lasun Naan 🍞🧄",
+  pregunta: "❤️ Lasun Naan 🍞🧄",
   respuesta: "Pan con ajo",
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/garlicNaan2.jpg"
 },
 {
-  pregunta: "Naan 🍞",
+  pregunta: "❤️ Naan 🍞",
   respuesta: "Pan",
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/naan.jpg"
 },
@@ -325,17 +325,17 @@ export const preguntas = [
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/TKulcha3.jpg"
 },
 {
-  pregunta: "Till Dania Naan 🍞",
+  pregunta: "❤️ Till Dania Naan 🍞",
   respuesta: "Pan Sesamo y Cilantro",
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/tilldania.jpg"
 },
 {
-  pregunta: "Kashmiri Pulao 🍚",
+  pregunta: ❤️ Kashmiri Pulao 🍚",
   respuesta: "Arroz con frutas",
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/Kashimiri.jpg"
 },
 {
-  pregunta: "Nimboo Baath 🍚🍋",
+  pregunta: "❤️ Nimboo Baath 🍚🍋",
   respuesta: "Arroz con curry, semillas mostaza y limon",
   imagen: "https://rishtedar.cl/wp-content/uploads/2023/08/nimboB.jpg"
 },
