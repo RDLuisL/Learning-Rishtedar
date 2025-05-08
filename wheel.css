@@ -1,0 +1,45 @@
+body {
+    background-image: url("http://hussainabbas.com/TMA/wheel/pattern.jpg");
+    background-color: #2C3E50;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: #ecf0f1;
+    margin-top: 20px;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+  }
+  
+  #container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  canvas {
+    width: 500px;
+    height: 500px;
+  }
+  
+  #spin {
+    cursor: pointer;
+  }
+  
+  #category-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: none;
+  }
+  
+  

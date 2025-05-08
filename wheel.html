@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia Wheel</title>
+  <link rel="stylesheet" href="wheel.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="container">
+    <h1>TRIVIA WHEEL!</h1>
+    <span id="spin">
+      <canvas id="canvas" width="500" height="500"></canvas>
+    </span>
+    <div id="result-area">
+      <button id="category-button" style="display: none;"></button>
+    </div>
+  </div>
+  <audio id="spin-sound" src="/rulet_audio.mp3" preload="auto"></audio>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="wheel.js"></script>
+</body>
+</html>
