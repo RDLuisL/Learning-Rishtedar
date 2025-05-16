@@ -1,8 +1,9 @@
-var colors = ["#511158", "#91226F", "#511158", "#91226f", "#511158", "#91226f", "#511158", "#91226f"];
-var prize_descriptions = ["Entradas", "Vegetariano", "Pollo", "Seafood", "Cordero", "305", "Tandoor", "Postres"];
+// wheel.js
+const colors = ["#511158", "#91226F", "#511158", "#91226f", "#511158", "#91226f", "#511158", "#91226f", "#511158", "#91226f", "#511158"];
+const prize_descriptions = ["Entradas", "Vegetariano", "Pollo", "Seafood", "Cordero", "305", "Tandoor", "Postres", "Cocteles", "Vinos", "Cervezas", "Pan", "India"];
 
 let startAngle = 0;
-const arc = Math.PI / 4;
+const arc = (2 * Math.PI) / prize_descriptions.length;
 let spinTimeout = null;
 let spinTime = 0;
 let spinTimeTotal = 7000;
@@ -19,11 +20,12 @@ function drawSpinnerWheel() {
     wheel.clearRect(0, 0, 500, 500);
     wheel.strokeStyle = "#ecf0f1";
     wheel.lineWidth = 5;
-    wheel.font = '20px Helvetica, Arial';
+    wheel.font = '18px Helvetica, Arial';
 
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < prize_descriptions.length; i++) {
       const angle = startAngle + i * arc;
-      wheel.fillStyle = colors[i];
+      wheel.fillStyle = colors[i % colors.length];
+
       wheel.beginPath();
       wheel.arc(250, 250, outsideRadius, angle, angle + arc, false);
       wheel.arc(250, 250, insideRadius, angle + arc, angle, true);
@@ -44,7 +46,7 @@ function drawSpinnerWheel() {
     wheel.beginPath();
     wheel.moveTo(250 - 4, 250 - (outsideRadius + 5));
     wheel.lineTo(250 + 4, 250 - (outsideRadius + 5));
-    wheel.lineTo(250 + 0, 250 - (outsideRadius - 13));
+    wheel.lineTo(250, 250 - (outsideRadius - 13));
     wheel.closePath();
     wheel.fill();
   }
@@ -52,7 +54,7 @@ function drawSpinnerWheel() {
 
 function spin() {
   $("#spin").off('click');
-  document.getElementById("category-button").style.display = "none";
+  document.getElementById("result-area").innerHTML = "";
   spinSound.currentTime = 0;
   spinSound.play();
   spinTime = 0;
@@ -74,13 +76,38 @@ function rotateWheel() {
 function stopRotateWheel() {
   clearTimeout(spinTimeout);
   spinSound.pause();
+  spinSound.currentTime = 0;
+
   const degrees = startAngle * 180 / Math.PI + 90;
   const arcd = arc * 180 / Math.PI;
   const index = Math.floor((360 - degrees % 360) / arcd) % prize_descriptions.length;
-  const text = prize_descriptions[index];
-  const categoryBtn = document.getElementById("category-button");
-  categoryBtn.innerText = `Categoría: ${text}`;
-  categoryBtn.style.display = "inline-block";
+  const category = prize_descriptions[index];
+
+  const fileMap = {
+    "Entradas": "entradas.js",
+    "Vegetariano": "vegetariano.js",
+    "Pollo": "murgh.js",
+    "Seafood": "seafood.html",
+    "Cordero": "lamb.js",
+    "305": "305.js",
+    "Tandoor": "tandoor.js",
+    "Postres": "desert.js",
+    "Cocteles": "cocktails.js",
+    "Vinos": "wines.js",
+    "Cervezas": "beer.js",
+    "Pan": "bread.js",
+    "India": "hindi.js"
+  };
+
+  const file = fileMap[category];
+  const isHTML = file.endsWith(".html");
+  const link = isHTML ? file : `index.html?module=${file}`;
+
+  const resultArea = document.getElementById("result-area");
+  resultArea.innerHTML = `
+    <p>Categoría:</p>
+    <button id="category-button" onclick="location.href='${link}'">${category}</button>
+  `;
 
   $("#spin").on('click', function (e) {
     e.preventDefault();

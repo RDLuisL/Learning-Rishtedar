@@ -349,22 +349,22 @@ export const preguntas = [
 {
   pregunta: "Namaste Heat 🌿",
   respuesta: "Un toque suave y aromático",
-  imagen: "/Spicy-01.png"
+  imagen: "./Spicy-01.png"
 },
 {
   pregunta: "Bollywood Kick 🌶️",
   respuesta: "Sabor con carácter",
-  imagen: "/Spicy-02.png"
+  imagen: "./Spicy-02.png"
 },
 {
   pregunta: "Rajah Flame  🔥",
   respuesta: "Intenso como un festival de especias",
-  imagen: "/Spicy-03.png"
+  imagen: "./Spicy-03.png"
 },
 {
   pregunta: "Shiva’s Fury – ☢️",
   respuesta: "Solo para valientes",
-  imagen: "/Spicy-04.png"
+  imagen: "./Spicy-04.png"
 },
 // BEBIDAS
 // {
